@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge'
 
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Frontend",
     skills: [
       { name: "ReactJS", level: 95, color: "bg-blue-500" },
       { name: "NextJS", level: 90, color: "bg-gray-800" },
@@ -18,7 +18,7 @@ const skillCategories = [
     ]
   },
   {
-    title: "Backend Development",
+    title: "Backend",
     skills: [
       { name: "Go (Golang)", level: 88, color: "bg-cyan-600" },
       { name: "Node.js", level: 85, color: "bg-green-600" },
@@ -28,20 +28,19 @@ const skillCategories = [
     ]
   },
   {
-    title: "Database & DevOps",
+    title: "Databaza we DevOps",
     skills: [
       { name: "MySQL", level: 90, color: "bg-blue-700" },
       { name: "PostgreSQL", level: 85, color: "bg-blue-800" },
       { name: "Redis", level: 82, color: "bg-red-600" },
       { name: "Docker", level: 85, color: "bg-blue-400" },
-      { name: "AWS", level: 80, color: "bg-orange-600" },
       { name: "Git", level: 95, color: "bg-gray-700" }
     ]
   }
 ]
 
 const additionalSkills = [
-  "React Native", "WebSocket", "JWT Authentication", "Payment Integration (Stripe)",
+  "React Native", "WebSocket",  "Payment Integration (Stripe)",
   "CI/CD", "Testing (Jest, Cypress)", "Performance Optimization", "SEO",
   "Agile/Scrum", "Code Review", "Technical Documentation", "Problem Solving"
 ]
@@ -58,12 +57,12 @@ export function SkillsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Technical Skills
+            Başarnyklarym
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Proficient in modern technologies and frameworks for building scalable, 
             high-performance applications across the full development stack.
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
@@ -79,7 +78,7 @@ export function SkillsSection() {
                 <CardHeader>
                   <CardTitle className="text-xl font-bold">{category.title}</CardTitle>
                   <CardDescription>
-                    Core competencies and expertise level
+                    Islendik görnüşli web saýtlary we mobile app-lary ýazyp, we serwer konfigurasiýalaryny we optimizasiýalaryny edip bilýäris.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -94,9 +93,9 @@ export function SkillsSection() {
                     >
                       <div className="flex justify-between items-center">
                         <span className="font-medium text-sm">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                        {/* <span className="text-xs text-muted-foreground">{skill.level}%</span> */}
                       </div>
-                      <div className="relative">
+                      {/* <div className="relative">
                         <Progress 
                           value={skill.level} 
                           className="h-2"
@@ -109,7 +108,7 @@ export function SkillsSection() {
                           className={`absolute top-0 left-0 h-2 rounded-full ${skill.color}`}
                           style={{ width: `${skill.level}%` }}
                         />
-                      </div>
+                      </div> */}
                     </motion.div>
                   ))}
                 </CardContent>
@@ -126,10 +125,12 @@ export function SkillsSection() {
         >
           <Card>
             <CardHeader>
-              <CardTitle className="text-xl font-bold text-center">Additional Skills & Tools</CardTitle>
-              <CardDescription className="text-center">
+              <CardTitle className="text-xl font-bold text-center">
+                Goşmaça bilýän tehnologiýalarymyz
+              </CardTitle>
+              {/* <CardDescription className="text-center">
                 Technologies and methodologies I work with regularly
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3 justify-center">
@@ -159,11 +160,12 @@ export function SkillsSection() {
           className="text-center mt-12"
         >
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-lg p-8">
-            <h3 className="text-2xl font-bold mb-4">Always Learning</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              Biz hemişe öwrenýäris
+            </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Technology evolves rapidly, and I'm committed to continuous learning. Currently exploring 
-              advanced Go patterns, cloud-native architectures, and emerging frontend frameworks to stay 
-              at the forefront of modern development practices.
+              Tehnologiýa çalt ösýär, Biz bolsa öz toparymyz bilen täze tehnologiýalara bilimimizi artdyrýarys. 
+              Häzirki wagtda has-da bulut tehnologiýalary bilen işlemeklige bolan bilimimizi ösdürýäris.
             </p>
           </div>
         </motion.div>
